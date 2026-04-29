@@ -2,9 +2,12 @@
 
 ## Semana 1
 Dia 01
-- Imprimir números de 1 a 10
-- Verificar par ou ímpar
-- Soma de lista
+- imprimit_1_a_10.dart
+- par_ou_ímpar.dart
+- soma_lista.dart
 
 Dia 02
-- Repetir Número de 1 a 20, quando for multiplo de 3 imprimir Fizz, quando for de 5 Buzz e os dois, FizzBuzz
+- repetir_numero.dart
+- soma_input_usuario.dart
+- lista_+_condicao.dart
+- funcao_par.dart
