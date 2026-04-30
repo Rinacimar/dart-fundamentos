@@ -11,3 +11,6 @@ Dia 02
 - soma_input_usuario.dart
 - lista_+_condicao.dart
 - funcao_par.dart
+
+Dia 03
+- menu_interativo.dart
