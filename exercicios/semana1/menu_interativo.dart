@@ -1,5 +1,19 @@
 import 'dart:io';
 
+int lerNumero() {
+  bool success = false;
+
+  while (!success){
+    try {
+      int numInt = int.parse(stdin.readLineSync()!);
+      return numInt;
+    } catch(e) {
+      print("Por favor informe apenas número. \n");
+    }
+  } 
+
+}
+
 void menu() {
   bool success = false;
   int opcao = 0;
@@ -8,102 +22,57 @@ void menu() {
     print("Escolha uma opção:");
     print("1 - Verificar se o número é par");
     print("2 - Somar números");
-    print("3 - Sair");
-    
-    try {
-      opcao = int.parse(stdin.readLineSync()!);
-      if (opcao == 1 || opcao == 2 || opcao ==3){
-        if (opcao == 1){
-          ehPar();
-        } else if (opcao == 2) {
-          soma();
-        } else {
-          print("Encerrando! Obrigado!");
-          success = true;
-        }
-      } else {
-        print("Por favor informe um numero que seja referente as opções!");
-        print("");
-        success = false;
-      }
-    } catch (e){
-      print("Por favor informe apenas o número da opção.");
-      print("");
-    }
-  }
+    print("3 - Sair \n");
 
   
-
+    opcao = lerNumero();
+    if (opcao == 1 || opcao == 2 || opcao ==3){
+      if (opcao == 1){
+        verificarPar();
+      } else if (opcao == 2) {
+        soma();
+      } else {
+        print("Encerrando! Obrigado!");
+        success = true;
+      }
+    } else {
+      print("Por favor informe um numero que seja referente as opções! \n");
+    }
+  }
 }
 
-void ehPar() {
-  int numero = 0;
-  bool success = false;
-
+void verificarPar() {
   print("Por favor informe o número para verificar: ");
+  int numero = lerNumero();
 
-  while (!success) {
-    try {
-      numero = int.parse(stdin.readLineSync()!);
-
-      if (numero%2 == 0){
-        print("Número é par");
-        print("");
-      } else {
-        print("Número é impar");
-        print("");
-      }
-
-      success = true;
-    } catch (e){
-      print("Por favor informe apenas número.");
-      print("");
-    }
+  if (ehPar(numero)){
+    print("Número é par \n");
+  } else {
+    print("Número é impar \n");
   }
+}
 
-  
+bool ehPar(int numero) {
+  return numero%2 == 0;
 }
 
 void soma() {
   int quantidade = 0;
-  bool success = false;
   var resultado = 0;
   var count = 0;
 
   print("Quantos numeros quer somar?");
-  print("");
+  
+  quantidade = lerNumero();
 
-  while (!success){
-    try {
-      quantidade = int.parse(stdin.readLineSync()!);
-      success = true;
-    } catch (e) {
-      print("Informe apenas número");
-      print("");
-    }
-  }
-
-  success = false;
   print("Informe os numeros agora:");
-  print("");
 
   while (count < quantidade) {
-    while (!success) {
-      try {
-    
-        var numero = int.parse(stdin.readLineSync()!);
-        resultado += numero;
-        success = true;
-      } catch (e) {
-        print("Por favor, informe um número");
-        print("");
-      }
-    }
+    int numero = lerNumero();
+    resultado += numero;
     count += 1;
-    success = false;   
   }
-  print("O resultado da soma é $resultado");
-  print("");
+  print("O resultado da soma é $resultado \n");
 }
 
 
