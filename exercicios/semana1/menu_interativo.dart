@@ -1,17 +1,13 @@
 import 'dart:io';
 
 int lerNumero() {
-  bool success = false;
-
-  while (!success){
+  while (true){
     try {
-      int numInt = int.parse(stdin.readLineSync()!);
-      return numInt;
+      return int.parse(stdin.readLineSync()!);
     } catch(e) {
       print("Por favor informe apenas número. \n");
     }
   } 
-
 }
 
 void menu() {

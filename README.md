@@ -17,3 +17,7 @@ Dia 03
 
 Dia 04
 - Refatoração do codigo menu_interativo.dart com pequenas melhorias.
+
+Dia 05
+- Revisão semanal
+- Recriação do codigo do dia 03, sem realizar consulta ao codigo antigo.
