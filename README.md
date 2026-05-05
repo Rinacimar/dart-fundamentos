@@ -21,3 +21,6 @@ Dia 04
 Dia 05
 - Revisão semanal
 - Recriação do codigo do dia 03, sem realizar consulta ao codigo antigo.
+
+Dia 06
+- Pequena revisão em funções e um exercicio simples e basico para fixação
