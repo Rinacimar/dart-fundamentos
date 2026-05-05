@@ -8,7 +8,7 @@ int somar(int a, int b) {
 }
 
  bool  ehMultiplo(int numero, int divisor){
-  bool resultado = (numero % 5 == 0);
+  bool resultado = (numero % divisor == 0);
   return resultado;
  }
 
