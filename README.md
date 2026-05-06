@@ -24,3 +24,6 @@ Dia 05
 
 Dia 06
 - Pequena revisão em funções e um exercicio simples e basico para fixação
+
+Dia 07
+- Exercicios voltados para Lista, Loops e Funções. maior_numero_lista.dart, media_numeros.dart, pares_impares.dart, filtrar_numero.dart, desafio01.dart
