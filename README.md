@@ -27,3 +27,11 @@ Dia 06
 
 Dia 07
 - Exercicios voltados para Lista, Loops e Funções. maior_numero_lista.dart, media_numeros.dart, pares_impares.dart, filtrar_numero.dart, desafio01.dart
+
+Dia 08
+- Estudo de Maps.
+- criaraluno.dart
+- listamaps.dart
+- produto.dart
+- listaproduto.dart
+- desafio02.dart
