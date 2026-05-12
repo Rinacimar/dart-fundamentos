@@ -68,3 +68,10 @@ Criação de um unico codigo com as funções e metodos da semana, com menu inte
 
 ### Exercicios:
 - control_estoque.dart
+
+# Semana 03
+## Dia 01
+Estudo de Orientação a Objetos.
+
+### Exercicios:
+- objetos.dart
